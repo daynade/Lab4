@@ -7,16 +7,16 @@ public class TryMain
     {
         Scanner sc=new Scanner(System.in);
         int age;
-        while(true)
+        while(true) //Loops till there is no exception caught
         {
             System.out.print("Enter your age: ");
             String text = sc.nextLine().trim();
             try{
-                age=Integer.parseInt(text);
+                age=Integer.parseInt(text); //changes the string into an int
                 System.out.println("Thanks!\nYour age is " + age);
-                break;
+                break; //to exit loop
             }
-            catch(NumberFormatException e)
+            catch(NumberFormatException e) //Catches a string that can't be converted to numerical value
             {
                 System.out.println("Invalid input " + e.getMessage());
             }

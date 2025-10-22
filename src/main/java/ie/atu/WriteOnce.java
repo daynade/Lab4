@@ -10,13 +10,13 @@ public class WriteOnce
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
-
+        //User inputted information
         System.out.println("Enter the file name:\n(e.g. student.txt) ");
         String fileName = sc.nextLine().trim();
 
         System.out.println("Enter a name to save: ");
         String name = sc.nextLine().trim();
-
+        //Creates a file using the user inputted information and prints the "name" into the file
         try(PrintWriter out = new PrintWriter(new FileWriter(fileName, true)))
         {
             out.println(name);
