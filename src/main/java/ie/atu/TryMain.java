@@ -15,6 +15,4 @@ public class TryMain {
             System.out.println("Invalid input" + e.getMessage());
         }
     }
-
-
 }
