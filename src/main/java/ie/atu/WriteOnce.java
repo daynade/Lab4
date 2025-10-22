@@ -24,7 +24,7 @@ public class WriteOnce
         }
         catch (IOException ex)
         {
-            System.out.println("Error writing to "+ fileName);
+            System.out.println("Could not write to file: "+ fileName);
         }
     }
 }
